@@ -1,0 +1,188 @@
+/*Header*/
+#cabecalho{
+    background: url("../imagens/fundo.png") repeat-x;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+}
+#cabecalho ul{
+    display: flex;
+    align-items: end;
+    margin-bottom: 70px;
+    gap: 10px;
+    
+}
+#cabecalho ul a{
+    padding: 15px 30px;
+    background-color: #a7100b;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+#cabecalho ul a:hover{
+    background-color: #fff;
+    border: solid 1px #a7100b;
+    color: black;
+    transition: 0.5s;
+}
+
+/*Conteudo*/
+
+main{
+    display: grid;
+    grid-template-areas:"entrevistas conteudoPrincipal destaques";
+    grid-template-columns: 260px 350px 260px;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+/*Entrevistas*/ /*Fundo caixas*/
+#entrevistas,#conteudoPrincipal,#destaques{
+    background:url("../imagens/fundo-caixa.png") ;
+    grid-area: entrevistas;
+    display: flex;
+    flex-direction: column;
+}
+/*Estilização dos titulos*/
+#entrevistas .titleEntrevistas,.titleNews,.titleConteudoPrincipal,
+#titleMundo,#titleDestaque,#noticiasRecentesDescricao h3{
+    background-color:  #294c71;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.titleDestaqueEntrevista,.subtitleDestaque{
+    background-color: #a7100b;
+    text-transform: uppercase;
+    margin-top: 10px;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 7px 10px;
+}
+#entrevistas #entrevistados{
+    padding: 30px 10px;
+}
+#entrevistas #entrevistados li{
+    padding-bottom: 30px;
+}
+#entrevistas #entrevistados a{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+#entrevistas #entrevistados a:hover{
+    border-bottom: solid 2px #a7100b;
+    color: #a7100b;
+    transition: 0.3s;
+}
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    width: 100%;
+}
+form button{
+    margin-top: 15px;
+    width: 100px;
+    height: 50px;
+    background-color: #a7100b;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+form button:hover{
+    background-color: #db0e07;
+    border: solid 2px black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+/*Conteudo principal*/
+#conteudoPrincipal{
+   grid-area: conteudoPrincipal;
+   display: flex;
+   flex-direction: column;
+}
+#conteudoPrincipal img{
+    margin-top: 15px;
+}
+#conteudoPrincipal p{
+    margin-top: 15px;
+    font-size: 23px;
+}
+#conteudoPrincipal a, #destaques a{
+    margin: 10px 10px;
+    color: #a7100b;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 40px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+#conteudoPrincipal a:hover, #destaques a:hover{
+    color: #db0e07;
+    transition: 0.3s;
+}
+.noticiaMundo{
+    display: flex;
+    width: 350px;
+    height: 100px;
+
+}
+.noticiaMundo .noticiaMundoDescricao{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.noticiaMundo .noticiaMundoDescricao h3{
+    text-transform: uppercase;
+    color: #294c71;
+}
+.noticiaMundo .noticiaMundoDescricao p{
+    font-size: 15px !important;
+}
+/*Destaques*/
+
+#destaques{
+    grid-area: destaques;
+}
+#destaques img{
+    margin-top: 15px;
+}
+#destaques p{
+    margin: 15px 10px;
+    font-size: 20px;
+}
+.noticiasRecentes{
+    display: flex;
+    width: 260px;
+    height: 100px;
+}
+
+.noticiasRecentesDescricao h3{
+    font-size: 18px;
+    margin: 10px 10px;
+    color: #294c71;
+}
+.noticiasRecentesDescricao p{
+    font-size: 15px !important;
+}
+/*Rodape*/
+footer{
+    background-color: #294c71;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+}
